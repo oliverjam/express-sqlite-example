@@ -8,7 +8,7 @@ module.exports = { listTasks };
  * This is faster: https://github.com/WiseLibs/better-sqlite3/issues/793
  */
 const select_tasks = db.prepare(/*sql*/ `
-  SELECT content FROM tasks
+  SELECT content FROM tasks ORDER BY created_at DESC
 `);
 
 function listTasks() {
