@@ -7,7 +7,7 @@ server.get("/", (req, res) => {
   const tasks = listTasks();
   const body = /*html*/ `
     <!doctype html>
-    <html>
+    <html lang="en">
       <head>
         <title>Tasks</title>
       </head>
