@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node src/index.js",
-    "dev": "DB_FILE=db.sqlite nodemon src/index.js",
+    "dev": "DB_FILE=db.sqlite node --watch src/index.js",
     "seed": "DB_FILE=db.sqlite node src/database/seed.js"
   },
   "dependencies": {
@@ -9,8 +9,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
-    "eslint": "^8.23.0",
-    "nodemon": "^2.0.19"
+    "eslint": "^8.23.0"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
