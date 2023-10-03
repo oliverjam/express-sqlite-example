@@ -1,15 +1,20 @@
 {
   "scripts": {
     "start": "node src/index.js",
-    "dev": "DB_FILE=db.sqlite node --watch src/index.js",
+    "test": "cross-env DB_FILE='test.sqlite' node -r ./src/database/seed.js --test",
+    "dev": "cross-env DB_FILE='db.sqlite' nodemon src/index.js",
     "seed": "DB_FILE=db.sqlite node src/database/seed.js"
   },
   "dependencies": {
     "better-sqlite3": "^7.6.2",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "body-parser": "^1.20.2"
   },
   "devDependencies": {
-    "eslint": "^8.23.0"
+    "eslint": "^8.23.0",
+    "nodemon": "^2.0.20"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
