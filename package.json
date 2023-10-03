@@ -6,15 +6,16 @@
     "seed": "DB_FILE=db.sqlite node src/database/seed.js"
   },
   "dependencies": {
-    "better-sqlite3": "^7.6.2",
-    "express": "^4.18.1",
     "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^7.6.2",
+    "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",
-    "body-parser": "^1.20.2"
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "eslint": "^8.23.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "prettier": "^3.0.3"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
